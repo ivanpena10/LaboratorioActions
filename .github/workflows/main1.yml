@@ -10,6 +10,8 @@ jobs:
         env: 
           API_KEY: Q452RY76512WW
         run: echo " The API key is:${{env.API_KEY}}"
+      - name: step2 
+        run: echo "The API key is:$API_KEY"
   job2: 
     runs-on: ubuntu-latest
     steps: 
