@@ -4,10 +4,11 @@ on: [pull_request, push]
 jobs:
   job1:
     runs-on: ubuntu-latest
-    env: 
-      API_KEY: Q452RY76512WW
+    
     steps: 
       - name: step1
+        env: 
+          API_KEY: Q452RY76512WW
         run: echo " The API key is:${{env.API_KEY}}"
   job2: 
     runs-on: ubuntu-latest
